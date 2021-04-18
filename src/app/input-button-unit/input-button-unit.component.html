@@ -3,7 +3,7 @@
 <input
   #inputElementRef
   [value]="title"
-  (keyup.enter)="changeTitle($event.target.value)"
+  (keyup.enter)="submit($event.target.value)"
 />
 
-<button (click)="changeTitle(inputElementRef.value)">Save</button>
+<button (click)="submit(inputElementRef.value)">Save</button>

@@ -20,6 +20,10 @@ export class ListManagerComponent implements OnInit {
     this.todoListService.addItem({ title });
   }
 
+  updateItem(item: TodoItem, changes): void {
+    this.todoListService.updateItem(item, changes);
+  }
+
   removeItem(item: TodoItem): void {
     this.todoListService.deleteItem(item);
   }
